@@ -1,12 +1,12 @@
 // Semestre 2018 - 1
-//************************************************************//
-//************************************************************//
-//************** Alumno (s): *********************************//
-//*************	González Vicente Juan Carlos			Grupo:1							******//
-//*************		Visual Studio Community 2017		******//
-//*************				Version	15.3.2				******//
-//************************************************************//
-//************************************************************//
+//****************************************************************************//
+//****************************************************************************//
+//************** Alumno (s): *************************************************//
+//*************	GonzÃ¡lez Vicente Juan Carlos			Grupo:1	******//
+//*************		Visual Studio Community 2017		**************//
+//*************			Version	15.3.2			**************//
+//****************************************************************************//
+//****************************************************************************//
 #include "Main.h"
 
 
@@ -410,13 +410,13 @@ int main(int argc, char** argv)   // Main Function
 {
 	glutInit(&argc, argv); // Inicializamos OpenGL
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-	glutInitWindowSize(500, 500);	// Tamaño de la Ventana
+	glutInitWindowSize(500, 500);	// TamaÃ±o de la Ventana
 	glutInitWindowPosition(20, 60);	//Posicion de la Ventana
 	glutCreateWindow("Practica 6"); // Nombre de la Ventana
 	InitGL();						// Parametros iniciales de la aplicacion
-	glutDisplayFunc(display);  //Indicamos a Glut función de dibujo
-	glutReshapeFunc(reshape);	//Indicamos a Glut función en caso de cambio de tamano
-	glutKeyboardFunc(keyboard);	//Indicamos a Glut función de manejo de teclado
+	glutDisplayFunc(display);  //Indicamos a Glut funciÃ³n de dibujo
+	glutReshapeFunc(reshape);	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+	glutKeyboardFunc(keyboard);	//Indicamos a Glut funciÃ³n de manejo de teclado
 	glutSpecialFunc(arrow_keys);	//Otras
 	glutIdleFunc(animacion);
 	glutMainLoop();          // 
