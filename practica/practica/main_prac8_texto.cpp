@@ -2,11 +2,12 @@
 //****************************************************************************//
 //****************************************************************************//
 //************** Alumno (s): *************************************************//
-//*************	Gonz√°lez Vicente Juan Carlos			Grupo:1	******//
+//*************	Gonz·lez Vicente Juan Carlos			Grupo:1	******//
 //*************		Visual Studio Community 2017		**************//
 //*************			Version	15.3.2			**************//
 //****************************************************************************//
 //****************************************************************************//
+
 #include "texture.h"
 
 float pos_camX = 0, pos_camY = 0, pos_camZ = -20; 
@@ -86,14 +87,14 @@ void prisma (GLuint textura1, GLuint textura2)  //Funcion creacion prisma
 {
 
 	GLfloat vertice [8][3] = {
-				{0.5 ,-0.5, 0.5},    //Coordenadas V√©rtice 0 V0
-				{-0.5 ,-0.5, 0.5},    //Coordenadas V√©rtice 1 V1
-				{-0.5 ,-0.5, -0.5},    //Coordenadas V√©rtice 2 V2
-				{0.5 ,-0.5, -0.5},    //Coordenadas V√©rtice 3 V3
-				{0.5 ,0.5, 0.5},    //Coordenadas V√©rtice 4 V4
-				{0.5 ,0.5, -0.5},    //Coordenadas V√©rtice 5 V5
-				{-0.5 ,0.5, -0.5},    //Coordenadas V√©rtice 6 V6
-				{-0.5 ,0.5, 0.5},    //Coordenadas V√©rtice 7 V7
+				{0.5 ,-0.5, 0.5},    //Coordenadas VÈrtice 0 V0
+				{-0.5 ,-0.5, 0.5},    //Coordenadas VÈrtice 1 V1
+				{-0.5 ,-0.5, -0.5},    //Coordenadas VÈrtice 2 V2
+				{0.5 ,-0.5, -0.5},    //Coordenadas VÈrtice 3 V3
+				{0.5 ,0.5, 0.5},    //Coordenadas VÈrtice 4 V4
+				{0.5 ,0.5, -0.5},    //Coordenadas VÈrtice 5 V5
+				{-0.5 ,0.5, -0.5},    //Coordenadas VÈrtice 6 V6
+				{-0.5 ,0.5, 0.5},    //Coordenadas VÈrtice 7 V7
 				};
 
 		
@@ -383,14 +384,14 @@ int main ( int argc, char** argv )   // Main Function
 {
   glutInit            (&argc, argv); // Inicializamos OpenGL
   glutInitDisplayMode (GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-  glutInitWindowSize  (5000, 5000);	// Tama√±o de la Ventana
+  glutInitWindowSize  (5000, 5000);	// TamaÒo de la Ventana
   glutInitWindowPosition (0, 0);	//Posicion de la Ventana
   glutCreateWindow    ("Practica 8"); // Nombre de la Ventana
   //glutFullScreen     ( );         // Full Screen
   InitGL ();						// Parametros iniciales de la aplicacion
-  glutDisplayFunc     ( display );  //Indicamos a Glut funci√≥n de dibujo
-  glutReshapeFunc     ( reshape );	//Indicamos a Glut funci√≥n en caso de cambio de tamano
-  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut funci√≥n de manejo de teclado
+  glutDisplayFunc     ( display );  //Indicamos a Glut funciÛn de dibujo
+  glutReshapeFunc     ( reshape );	//Indicamos a Glut funciÛn en caso de cambio de tamano
+  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut funciÛn de manejo de teclado
   glutSpecialFunc     ( arrow_keys );	//Otras
   glutIdleFunc		  ( animacion );
   glutMainLoop        ( );          // 
